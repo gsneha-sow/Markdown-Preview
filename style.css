@@ -1,0 +1,58 @@
+body, html {
+    color: #1b1b32;
+    background-color: rgb(231 218 218);
+  }
+  
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+.editor-card{
+    text-align: center;
+    margin: 10px;
+}
+.editor-card #editor{
+    
+    width: 628px;
+    height: 325px;
+    padding: 10px;
+
+}
+.edit-toolabr{
+    /* display: flex; */
+    align-items: center;
+    background-color: #e3b3a8;
+    padding: 0.3rem;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-family: Russo One;
+    font-size: 1rem;
+    color: black;
+    /* max-width: 628px; */
+}
+
+.preview-card{
+    text-align: center;
+    margin: 10px;
+}
+
+.prev-toolabr{
+    /* display: flex; */
+    align-items: center;
+    background-color: #e3b3a8;
+    padding: 0.3rem;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-family: Russo One;
+    font-size: 1rem;
+    color: black;
+    /* max-width: 828px; */
+}
+.preview-card #preview{
+    
+    width: 828px;
+    height: 325px;
+    padding: 10px;
+
+}
+

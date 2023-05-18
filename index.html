@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app.js"></script>
+    <script src="marked.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Markdown Previewer</title>
+  </head>
+
+  <body>
+    <div class="editor-card">
+        <div class="edit-toolabr" id="edit-toolbar"> Editor</div>
+        <textarea id="editor" oninput="update(this);"></textarea>
+    </div>
+        <div>
+            <div class="preview-card" >
+                <div class="prev-toolabr" id="prev-toolbar"> Previewer</div>
+                <!-- <textarea id="editor"></textarea> -->
+                <textarea id="preview" readonly></textarea>
+
+            </div>
+        </div>
+        
+    
+    
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    const preview = document.getElementById('preview')
+function update(el) {
+    preview.value = el.value;
+    preview.value = marked(el.value);
+    // marked(defaultText)
+}
+  </script>
+  
+</html>
